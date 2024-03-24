@@ -16,7 +16,7 @@ class Anagram {
                 )
                         .values()).stream().collect(Collectors.toMap(key -> key, val ->
                 (Stream.of(items).collect(Collectors.toMap(item -> item, item -> Stream.of(item.split("")).sorted().collect(Collectors.joining())))).entrySet().stream().filter(entry -> entry.getValue().equalsIgnoreCase(val)).map(Map.Entry::getKey).collect(Collectors.toList()))).forEach((b, n) -> System.out.println(b + "  " + n));
-
+        System.out.println("I am Ok");
     }
 }
 
