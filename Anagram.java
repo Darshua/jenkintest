@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-class AnnagramGrouping {
+class Anagram {
     public static void main(String[] args) {
         String[] items = {"eat", "ate", "tea", "nat", "tan"};
         new HashSet<>(
